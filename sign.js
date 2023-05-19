@@ -35,7 +35,7 @@ signupForm.addEventListener('submit', (e) => {
 
   // Vérification de la longueur du mot de passe
   if (password.length < 6) {
-    alert("Le mot de passe doit contenir au moins 6 caractères.")
+    alert("The password must contain at least 6 characters.")
     return
   }
 
