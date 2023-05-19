@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Day</title>
+    <script src="principal.js" defer="true" type="module"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" defer='true' src="script.js"></script>
+    <script type="module" defer='true' src="sign.js"></script>
+
+    <!-- Ajout des polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="bg-gray-800">
+
+    <header class="bg-gray-600 mb-20 p-4">
+      <div class="container mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-4xl text-black font-bold border-4 border-blue-600 rounded-lg p-2">The Day</h1>
+        <div class="text-center flex justify-center items-center bg-gray-400 rounded-lg mx-auto">
+          <a href="#" class="text-2xl text-black px-4 py-2 rounded font-bold mb-2">Quote</a>
+          <a href="#" class="text-2xl text-black px-4 py-2 rounded font-bold mb-2">Recipes</a>
+          <a href="#" class="text-2xl text-black px-4 py-2 rounded font-bold mb-2">Weather</a>
+          <a href="#" class="text-2xl text-black px-4 py-2 rounded font-bold mb-2">Joke</a>
+          <a href="#" class="text-2xl text-black px-4 py-2 rounded font-bold mb-2">News</a>
+        </div>
+        <a href="/sign.html" class="bg-blue-600 text-white p-2 rounded hover:bg-blue-700 inline-flex items-center justify-center">Sign in</a>
+        <button class="logout bg-blue-600 text-white p-2 rounded hover:bg-blue-700 inline-flex items-center justify-center ml-2">Log out</button>
+      </div>
+    </header>
+    
+    
+    
+
+    <h2 class="text-white p-4 mt-4 max-w-2xl text-2xl lg:mx-auto text-center italic mb-20">Welcome to today's quote and challenge section. Here you can find inspiration for your day with our specially selected quote and a challenge to get out of your comfort zone.</h2>
+
+    <div class="flex flex-row justify-between m-4 h-full">
+      <div id="quote-container" class="bg-gray-400 rounded-lg mt-8 shadow-md p-8 mb-16 w-1/2 ml-4">
+        <h2 class="text-2xl font-bold mb-4">Quote of the day :</h2>
+        <p id="quote" class="border-2 p-2 rounded-lg bg-gray-300 text-lg mb-2"></p>
+        <p id="author" class="text-md font-bold"></p>
+        <button id="new-quote-button" class="bg-blue-600 text-white px-4 py-2 rounded mt-4 hover:bg-blue-700">New quote</button>
+        
+      </div>
+    
+      <div id="challenge-container" class="bg-gray-400 rounded-lg mt-8 shadow-md p-8 mb-16 w-1/2 ml-4">
+        <h2 class="text-2xl font-bold mb-4">Challenge of the day :</h2>
+        <p id="activity" class="border-2 p-2 rounded-lg bg-gray-300 text-lg mb-2"></p>
+        <p id="type" class="text-md font-bold"></p>
+        <p id="participants" class="text-md font-bold mt-2"></p>
+        <button id="new-challenge-button" class="bg-blue-600 text-white px-4 py-2 rounded mt-4 hover:bg-blue-700">New challenges </button>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a href="/index.html" class="bg-blue-600 text-white px-4 py-2 rounded mt-4 hover:bg-blue-700">Your quote ?</a>
+    </div>
+
+  <section class="text-gray-200 bg-gray-800 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">Your Comments</h1>
+      <div class="flex flex-wrap">
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-500 bg-opacity-40 p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6">I recently discovered this challenge quote of the day site and I am absolutely delighted! The quotes are inspiring and motivating, and the challenges are a great way to put the lessons into practice. "</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-500 bg-opacity-40 p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6">I love the daily challenges and find them all very relevant and motivating. The quotes are also very well chosen and inspiring. The site is easy and pleasant to navigate, and I really like the visual presentation of the challenges.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-gray-900 text-white py-4 px-4 bottom-0 left-0 right-0">
+    <p class="text-center">&copy; 2023 Quotes of the Day</p>
+  </footer>
+</body>
+</html>

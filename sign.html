@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign</title>
+  <!-- Ajouter la ligne suivante pour inclure les styles de Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-800">
+  <div class="max-w mx-auto my-10 bg-gray-600 p-5 rounded-md shadow-sm flex flex-col md:flex-row">
+    <div class="shrink-1 mb-12 grow-0 basis-auto md:mb-0 md:w-9/12 md:shrink-0 lg:w-6/12 xl:w-6/12">
+      <img src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="w-full" alt="Sample image" />
+    </div>
+  
+    <div class="md:ml-8 flex-grow">
+      <h2 class="text-xl text-center italic font-bold mb-4">Sign Up</h2>
+      <a href ='/home.html' class="absolute top-0 left-0 mt-4 ml-4 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Back</a>
+
+      <form class="signup mb-8 border-4 border-blue-500 p-2 rounded-lg ">
+        <label for="email" class="block mb-2 font-bold text-black">Email:</label>
+        <input type="email" name="email" class="w-full px-3 py-2 border rounded-md text-black focus:outline-none focus:border-blue-500" placeholder="jane@example.com">
+        
+        <label for="password" class="block mt-3 mb-2 font-bold text-black">Password:</label>
+        <input type="password" name="password" class="w-full px-3 py-2 border rounded-md text-black focus:outline-none focus:border-blue-500" placeholder="********">
+        
+        <button class="mt-5 w-full bg-blue-500 text-white py-1.5 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600 mb-2 text-sm">Sign up</button>
+      </form>
+
+      <h2 class="text-xl text-center italic font-bold mb-4">Sign In</h2>
+
+      <form class="login mb-4 border-4 border-blue-500 p-2 rounded-lg ">
+        <label for="email" class="block mb-2 font-bold text-black">Email:</label>
+        <input type="email" name="email" class="w-full px-3 py-2 border rounded-md text-black focus:outline-none focus:border-blue-500" placeholder="jane@example.com">
+        
+        <label for="password" class="block mt-3 mb-2 font-bold text-black">Password:</label>
+        <input type="password" name="password" class="w-full px-3 py-2 border rounded-md text-black focus:outline-none focus:border-blue-500" placeholder="********">
+        
+        <button class="mt-5 w-full bg-blue-500 text-white py-1.5 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600 text-sm">Login</button>
+        <button class="mt-2 logout w-full bg-gray-300 text-black py-1.5 rounded-md hover:bg-gray-400 focus:outline-none focus:bg-gray-400 text-sm">Logout</button>
+      </form>
+
+    </div>
+  </div>
+  <script type="module" defer='true' src="sign.js"></script>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="home.html"></script>
+
+</body>
+
+</html>
